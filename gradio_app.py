@@ -85,4 +85,4 @@ if __name__ == "__main__":
     result_dir = os.path.join("./", "results")
     venhancer_iface = venhancer_demo(result_dir, args.version)
     venhancer_iface.queue(max_size=12)
-    venhancer_iface.launch(max_threads=1)
+    venhancer_iface.launch(server_name="0.0.0.0", share=True, max_threads=1)
